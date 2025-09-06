@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+form {
+    margin: 20px;
+    border: solid 1px black;
+    border-radius: 4px;
+    padding: 10px;
+    display: inline-block;
+}

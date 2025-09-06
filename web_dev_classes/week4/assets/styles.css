@@ -1,0 +1,110 @@
+/* --- Global Styles & Typography --- */
+:root {
+    /* Color variables */
+    --primary-color: #578098;
+    --secondary-color: #87ADC6;
+    --background-color: #10383A;
+    --text-color: #F0FBFA;
+
+    /* Fonts */
+    --font-family: 'Arial';
+
+    /* Spacing */
+    --padding-base: 20px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding: var(--padding-base);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--background-color);
+    margin-bottom: 0.5em;
+}
+
+header {
+    text-align: center;
+    padding: var(--padding-base) 0;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 20px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    border-top: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-size: 0.9em;
+}
+
+
+/* --- CSS Grid Section --- */
+.grid-container {
+    /* Use Grid for the main content layout */
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* Default to a 2-column layout */
+    padding: var(--padding-base);
+    margin-top: 30px;
+    color: #FFF;
+}
+
+.grid-item {
+    background-color: var(--secondary-color);
+    padding: var(--padding-base);
+    border-radius: 0.5rem;
+}
+
+/* --- Media Queries for Responsiveness --- */
+/* Small screens (mobile devices) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    /* Stack grid items in a single column on mobile */
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Adjust grid layout for tablets */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+    /* Custom layout for large screens */
+    .grid-container {
+        grid-template-areas:
+            "item-1 item-2"
+            "item-3 item-4";
+        grid-template-columns: 1fr 1fr;
+    }
+}

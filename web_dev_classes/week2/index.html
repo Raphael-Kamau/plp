@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2- Enhanced HTML5 elements</title>
+</head>
+<body>
+    <h1>Definition Lists.</h1>
+    <dl>
+        <dt>Breakfast</dt>
+        <dd>Coffee with milk, toast and fried eggs.</dd>
+    </dl>
+    <h1>Nested Lists</h1>
+    <ol>
+        <li>Maize</li>
+            <ul>
+                <li>Ugali</li>
+                <li>Githeri</li>
+            </ul>
+        <li>Beans</li>
+            <ul>
+                <li>Githeri</li>
+                <li>Chapo Beans</li>
+            </ul>
+        <li>Wheat grains</li>
+            <ul>
+                <li>Pies</li>
+            </ul>
+        <li>Milk</li>
+            <ul>
+                <li>Tea</li>
+                <li>Yoghurt</li>
+            </ul>
+    </ol>
+    <h1>Images</h1>
+    <img src="assets/cobweb.jpg" alt="cobweb" loading="lazy">
+    <h2>Video</h2>
+    <video src="assets/my_video.mp4" height="400px" width="400px" controls>My Video</video>
+    <h2>Audio</h2>
+    <audio src="assets/meditation.mp3" controls >Your browser does not support audio play back</audio>
+    <h2>Tables</h2>
+    <table border="1">
+        <tr>
+            <th>Classes</th>
+            <th>Lecturer</th>
+        </tr>
+        <tr>
+            <td>Chakin</td>
+            <td>Erick Munene</td>
+        </tr>
+    </table>
+
+    <form action="action.php" method="post">
+        <label for="f-name">Name: </label><input type="text" placeholder="name..." value="name"><br><br>
+        <label for="email">Email: </label><input type="email" placeholder="email..." value="email"><br><br>
+        <label for="session">Session</label>
+        <select name="session" id="option" title="options">
+            <option value="session1">Session One</option>
+            <option value="session2">Session Two</option>
+            <option value="session3">Session Three</option>
+        </select>
+        <input type="file" value="file" title="file"><br><br>
+        <textarea rows="3" cols="10" name="message" id="" title="message" placeholder="Enter your message"></textarea>
+    </form>
+</body>
+</html>
