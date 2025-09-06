@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 20px 40px;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    border: none;
+    padding: 0.3rem 2rem;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #D1EEF4;
+    font-size: 1rem;
+    font-family: 'Calibri';
+}
+
+.nav-links a:hover {
+    border-bottom: solid 2px #3294B1;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('assets/nissan.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+}

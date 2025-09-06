@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple staff record form for entering staff details including name, email, and password.">
+    <title>Staff Record Form</title>
+    <style>
+        /* Basic Reset and Box Sizing */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body Styling for Centering and Background */
+        body {
+            font-family: Arial, sans-serif;
+            /* Using a common sans-serif font */
+            background-color: #f3f4f6;
+            /* Light gray background */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            /* Padding around the form for smaller screens */
+        }
+
+        /* Form Container Styling */
+        .form-container {
+            background-color: #ffffff;
+            /* White background for the form */
+            padding: 32px;
+            /* Padding inside the form container */
+            border-radius: 8px;
+            /* Rounded corners */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+            width: 100%;
+            /* Full width on small screens */
+            max-width: 448px;
+            /* Max width for larger screens (equivalent to md:max-w-md) */
+        }
+
+        /* Heading Styling */
+        h2 {
+            font-size: 24px;
+            /* Text-2xl */
+            font-weight: bold;
+            /* Font-bold */
+            color: #1f2937;
+            /* Gray-800 */
+            margin-bottom: 24px;
+            /* Mb-6 */
+            text-align: center;
+            /* Text-center */
+        }
+
+        /* Form Group (Label + Input) */
+        .form-group {
+            margin-bottom: 16px;
+            /* Mb-4 */
+        }
+
+        /* Label Styling */
+        label {
+            display: block;
+            /* Block */
+            color: #374151;
+            /* Gray-700 */
+            font-size: 14px;
+            /* Text-sm */
+            font-weight: 600;
+            /* Font-semibold */
+            margin-bottom: 8px;
+            /* Mb-2 */
+        }
+
+        /* Input Field Styling */
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            /* W-full */
+            padding: 10px 16px;
+            /* Px-4 Py-2 */
+            border: 1px solid #d1d5db;
+            /* Border border-gray-300 */
+            border-radius: 6px;
+            /* Rounded-md */
+            transition: all 0.2s ease-in-out;
+            /* Transition duration-200 ease-in-out */
+        }
+
+        /* Input Focus States */
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            /* Focus:outline-none */
+            border-color: transparent;
+            /* Focus:border-transparent */
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+            /* Focus:ring-2 focus:ring-blue-500 */
+        }
+
+        /* Last Form Group Margin Adjustment */
+        .form-group:last-of-type {
+            margin-bottom: 24px;
+            /* Mb-6 */
+        }
+
+        /* Submit Button Styling */
+        button[type="submit"] {
+            width: 100%;
+            /* W-full */
+            background-color: #2563eb;
+            /* Bg-blue-600 */
+            color: #ffffff;
+            /* Text-white */
+            font-weight: bold;
+            /* Font-bold */
+            padding: 8px 16px;
+            /* Py-2 Px-4 */
+            border-radius: 6px;
+            /* Rounded-md */
+            cursor: pointer;
+            /* Cursor-pointer */
+            border: none;
+            /* Remove default button border */
+            transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            /* Transition duration-200 ease-in-out */
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            /* Shadow-md */
+        }
+
+        /* Submit Button Hover and Focus States */
+        button[type="submit"]:hover {
+            background-color: #1d4ed8;
+            /* Hover:bg-blue-700 */
+        }
+
+        button[type="submit"]:focus {
+            outline: none;
+            /* Focus:outline-none */
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5), 0 1px 2px rgba(0, 0, 0, 0.05);
+            /* Focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Staff Record Form</h2>
+        <form action="index.php" method="post">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter staff name" required>
+            </div>
+
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter staff email" required>
+            </div>
+
+            <!-- Password Field -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">
+                Submit Record
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>

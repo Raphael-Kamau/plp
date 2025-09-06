@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Content & Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            line-height: 1.6;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        fieldset {
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border: 1px solid #aaa;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        label {
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML5 Content Showcase & Form</h1>
+        <p>This page demonstrates advanced HTML5 content elements and a fully-featured form using native validation.</p>
+    </header>
+
+    <section>
+        <h2>Favorite Programming Languages</h2>
+        <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>Java</li>
+            <li>Go</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Weekly Coding Schedule</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                    <th>Focus Area</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>2</td>
+                    <td>Frontend</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>3</td>
+                    <td>Backend</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>1.5</td>
+                    <td>Debugging</td>
+                </tr>
+                <tr>
+                    <td>Thursday</td>
+                    <td>2</td>
+                    <td>Projects</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>1</td>
+                    <td>Review</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Media Showcase</h2>
+        <figure>
+            <img src="image.jpg" alt="Image" />
+            <figcaption>Sample image embedded using HTML5.</figcaption>
+        </figure>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+        </audio>
+        <video controls width="600">
+            <source src="video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required minlength="3" placeholder="User" />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="18" max="99" required />
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Details</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required pattern="[A-Za-z0-9]{5,}"
+                    placeholder="Minimum 5 characters" />
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="6" />
+
+                <label for="confirm">Confirm Password:</label>
+                <input type="password" id="confirm" name="confirm" required minlength="6" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <label for="language">Preferred Language:</label>
+                <select id="language" name="language" required>
+                    <option value="">--Select--</option>
+                    <option value="python">Python</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                </select>
+
+                <label for="bio">Short Bio:</label>
+                <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+                <label>
+                    <input type="checkbox" name="terms" required />
+                    I agree to the terms and conditions
+                </label>
+            </fieldset>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 HTML5 Assignment</p>
+    </footer>
+
+</body>
+
+</html>
