@@ -1,0 +1,18 @@
+# CSS Transition and Animation
+## 1. transition properties
+## 2. transition-duration
+## 3. transition-timing - speed of the transition
+ linear - constant speed
+ ease - start slow fast and end slow
+ ease-in - start slow
+ ease-out -  end slow
+ ease-in-out - start and end slow
+
+## 4. transition-delay - delay before transition
+
+# Animation Properties
+@keyframes - defines the animation
+animation-name - name of the animation
+animation-duration - how long it should take
+animation-timing-function - speed of the animation
+animation-delay -  
