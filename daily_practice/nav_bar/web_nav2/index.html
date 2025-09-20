@@ -3,26 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventure Club</title>
+    <title>Oval Tours</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <main>
         <div class="landing-page">
             <header>
                 <nav>
+                    <div class="nav-header">
+                        <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+                    </div>
                     <ul class="nav-links">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
+                        <li><a href="index.html"><img src="assets/logo.png" alt="logo" class="logo"></a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#travel">Destinations</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </nav>
             </header>
             <section class="hero-section">
                 <div class="hero">
+                    <div class="hero-text">
+                        <h2>Oval</h2>
+                        <p>
+                            Welcome to Oval Tours, discover new places to travel
+                        </p>  
+                        <button class="hero-button"><a href="#travel">Explore</a></button>                      
+                    </div>
                 </div>
             </section>
-        </div>        
-    </main>   
+            <section id="travel" class="travel">
+                <h2>Travel Destinations</h2>
+                <div class="travel-cards">
+                    <div class="card">
+                        <img src="assets/paris.jpg" alt="Paris" loading="lazy">
+                        <h3>Paris, France</h3>
+                        <p>Experience the romance and culture of the City of Light.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/tokyo.jpg" alt="Tokyo" loading="lazy">
+                        <h3>Tokyo, Japan</h3>
+                        <p>Discover the blend of tradition and modernity in Tokyo.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/newyork.jpg" alt="New York" loading="lazy">
+                        <h3>New York, USA</h3>
+                        <p>Explore the bustling city that never sleeps.</p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/sydney.jpg" alt="Sydney">
+                        <h3>Sydney, Australia</h3>
+                        <p>Enjoy the stunning harbor and vibrant culture of Sydney.</p>
+                    </div>
+                </div>
+            </section>
+        </div>  
+        <section class="footer">
+            <p>&copy; 2025 Oval Tours. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://twitter.com/rahvickam"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/rah_vic/"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com/raphael-kamau/"><i class="fab fa-linkedin-in"></i></a>
+        </section>      
+    </main>  
+    <script src="scripts/scripts.js"></script> 
 </body>
 </html>
